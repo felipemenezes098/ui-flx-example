@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ThemeSwitcher } from "@/components/core/theme-switcher";
 import { Button } from "@/components/ui/button";
 import { siteConfig } from "@/config/site";
+import { Logo } from "../core/logo";
 
 const navLinks = [{ href: "/", label: "Home" }];
 
@@ -19,8 +20,9 @@ export function Navbar() {
           >
             <Link
               href="/"
-              className="text-sm font-medium text-foreground transition-opacity hover:opacity-80"
+              className="flex items-center gap-2 text-sm font-medium text-foreground transition-opacity hover:opacity-80"
             >
+              <Logo.Flexnative className="text-primary size-3.5 w-auto mt-0.5" />
               {siteConfig.name}
             </Link>
           </Button>
