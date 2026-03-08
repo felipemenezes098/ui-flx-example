@@ -20,7 +20,7 @@
   },
   "registries": {
     "@flx": {
-      "url": "http://localhost:3000/r/{name}.json"
+      "url": "https://ui.flexnative.com/r/{name}.json"
     }
   }
 }
