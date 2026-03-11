@@ -33,7 +33,7 @@ export const blocks = defineType({
         {
           name: 'hero',
           title: 'Hero',
-          of: ['heroBackgroundMedia', 'heroTextBadges'],
+          of: ['heroBackgroundMedia', 'heroTextBadges', 'heroContentMedia'],
         },
         {
           name: 'showcase',
@@ -67,6 +67,7 @@ export const blocks = defineType({
     {type: 'contentTitleWithMedia', title: 'Content • Title With Media'},
     {type: 'heroBackgroundMedia', title: 'Hero • Background Media'},
     {type: 'heroTextBadges', title: 'Hero • Text Badges'},
+    {type: 'heroContentMedia', title: 'Hero • Content Media'},
     {type: 'showcaseGridImageCards', title: 'Showcase • Grid Image Cards'},
   ],
 })

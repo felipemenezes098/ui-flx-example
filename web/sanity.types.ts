@@ -100,6 +100,21 @@ export type ShowcaseGridImageCards = {
   cta?: Cta;
 };
 
+export type HeroContentMedia = {
+  _type: "heroContentMedia";
+  title?: string;
+  description?: string;
+  media?: {
+    asset?: SanityImageAssetReference;
+    media?: unknown;
+    hotspot?: SanityImageHotspot;
+    crop?: SanityImageCrop;
+    _type: "image";
+  };
+  primaryCTA?: Cta;
+  secondaryCTA?: Cta;
+};
+
 export type HeroTextBadges = {
   _type: "heroTextBadges";
   title?: string;
@@ -351,6 +366,9 @@ export type Blocks = Array<
     } & HeroTextBadges)
   | ({
       _key: string;
+    } & HeroContentMedia)
+  | ({
+      _key: string;
     } & ShowcaseGridImageCards)
 >;
 
@@ -493,6 +511,7 @@ export type AllSanitySchemaTypes =
   | ContentTabsMediaItemsObjectMedia
   | ShowcaseGridImageCardsItemsObjectMedia
   | ShowcaseGridImageCards
+  | HeroContentMedia
   | HeroTextBadges
   | HeroBackgroundMedia
   | ContentTitleWithMedia

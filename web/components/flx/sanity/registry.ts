@@ -24,6 +24,7 @@ export const blockRegistry: BlockTypeMap = {
   contentTitleWithMedia: Content.TitleWithMedia,
   heroBackgroundMedia: Hero.BackgroundMedia,
   heroTextBadges: Hero.TextBadges,
+  heroContentMedia: Hero.HeroContentMedia,
   showcaseGridImageCards: Showcase.GridImageCards,
 };
 
